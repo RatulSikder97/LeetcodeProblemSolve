@@ -1,6 +1,5 @@
-class main {
-    public static void main(String args[]) {
-        int n = 25;
+class Solution {
+    public int alternateDigitSum(int n) {
         int i =0;
         int sum=0;
         int temp=0;
@@ -16,9 +15,7 @@ class main {
             
             i++;
         }
-
-        int ans = (sum1 > sum2) ? (sum1 - sum2) : (sum2 - sum1);
         
-        System.out.println(ans);
+        return i % 2 ==0 ? (sum2 - sum1) : sum1-sum2;
     }
 }
